@@ -1,8 +1,8 @@
 # Ignore Gradle build files in root directory
 build/
-/build
-/install
-/log
+ros/catkin_ws/build
+ros/catkin_ws/install
+ros/catkin_ws/log
 
 # Ignore backend Gradle project
 /backend/.gradle/
