@@ -1,0 +1,40 @@
+[4.312s] Invoking command in 'C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\src\ssak3': PYTHONPATH=C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\ssak3\prefix_override;C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\ssak3\Lib\site-packages;%PYTHONPATH% installDir=%installDir%
+IntelliJ IDEA=C:\Program Files\JetBrains\IntelliJ IDEA 2023.1.3\bin; c:\python37\python.exe setup.py egg_info --egg-base ..\..\build\ssak3 build --build-base C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\ssak3\build install --record C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\ssak3\install.log --install-scripts $base/lib/ssak3 --single-version-externally-managed
+[4.890s] running egg_info
+[4.890s] creating ..\..\build\ssak3\ssak3.egg-info
+[4.890s] writing ..\..\build\ssak3\ssak3.egg-info\PKG-INFO
+[4.890s] writing dependency_links to ..\..\build\ssak3\ssak3.egg-info\dependency_links.txt
+[4.890s] writing entry points to ..\..\build\ssak3\ssak3.egg-info\entry_points.txt
+[4.890s] writing requirements to ..\..\build\ssak3\ssak3.egg-info\requires.txt
+[4.890s] writing top-level names to ..\..\build\ssak3\ssak3.egg-info\top_level.txt
+[4.890s] writing manifest file '..\..\build\ssak3\ssak3.egg-info\SOURCES.txt'
+[4.922s] reading manifest file '..\..\build\ssak3\ssak3.egg-info\SOURCES.txt'
+[4.922s] writing manifest file '..\..\build\ssak3\ssak3.egg-info\SOURCES.txt'
+[4.922s] running build
+[4.922s] running build_py
+[4.922s] creating C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\ssak3\build
+[4.922s] creating C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\ssak3\build\lib
+[4.922s] creating C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\ssak3\build\lib\ssak3
+[4.922s] copying ssak3\my_node.py -> C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\ssak3\build\lib\ssak3
+[4.922s] copying ssak3\__init__.py -> C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\ssak3\build\lib\ssak3
+[4.937s] running install
+[4.937s] running install_lib
+[4.937s] creating C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\ssak3\Lib\site-packages\ssak3
+[4.937s] copying C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\ssak3\build\lib\ssak3\my_node.py -> C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\ssak3\Lib\site-packages\ssak3
+[4.937s] copying C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\ssak3\build\lib\ssak3\__init__.py -> C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\ssak3\Lib\site-packages\ssak3
+[4.937s] byte-compiling C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\ssak3\Lib\site-packages\ssak3\my_node.py to my_node.cpython-37.pyc
+[4.937s] byte-compiling C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\ssak3\Lib\site-packages\ssak3\__init__.py to __init__.cpython-37.pyc
+[4.937s] running install_data
+[4.953s] creating C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\ssak3\share\ament_index
+[4.953s] creating C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\ssak3\share\ament_index\resource_index
+[4.953s] creating C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\ssak3\share\ament_index\resource_index\packages
+[4.953s] copying resource\ssak3 -> C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\ssak3\share\ament_index\resource_index\packages
+[4.953s] copying package.xml -> C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\ssak3\share\ssak3
+[4.953s] running install_egg_info
+[4.953s] Copying ..\..\build\ssak3\ssak3.egg-info to C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\ssak3\Lib\site-packages\ssak3-0.0.0-py3.7.egg-info
+[4.969s] running install_scripts
+[5.000s] Installing my_node-script.py script to C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\ssak3\lib\ssak3
+[5.000s] Installing my_node.exe script to C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\ssak3\lib\ssak3
+[5.000s] writing list of installed files to 'C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\ssak3\install.log'
+[5.047s] Invoked command in 'C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\src\ssak3' returned '0': PYTHONPATH=C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\ssak3\prefix_override;C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\ssak3\Lib\site-packages;%PYTHONPATH% installDir=%installDir%
+IntelliJ IDEA=C:\Program Files\JetBrains\IntelliJ IDEA 2023.1.3\bin; c:\python37\python.exe setup.py egg_info --egg-base ..\..\build\ssak3 build --build-base C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\ssak3\build install --record C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\ssak3\install.log --install-scripts $base/lib/ssak3 --single-version-externally-managed

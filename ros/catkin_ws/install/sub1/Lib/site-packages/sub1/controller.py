@@ -74,7 +74,7 @@ class Controller(Node):
         
     def app_on_select(self,num):
         '''
-        로직 2. 특정 가전 제품 ON
+        로직 2. 특정 가전 제품 ON.
         '''
 
     def app_off_select(self,num):

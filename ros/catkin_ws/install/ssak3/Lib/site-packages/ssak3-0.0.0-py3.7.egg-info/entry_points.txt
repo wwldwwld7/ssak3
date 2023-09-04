@@ -1,0 +1,3 @@
+[console_scripts]
+my_node = ssak3.my_node:main
+
