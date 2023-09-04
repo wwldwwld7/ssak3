@@ -1,0 +1,80 @@
+[4.109s] Invoking command in 'C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\src\sub1': PYTHONPATH=C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\sub1\prefix_override;C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\Lib\site-packages;%PYTHONPATH% installDir=%installDir%
+IntelliJ IDEA=C:\Program Files\JetBrains\IntelliJ IDEA 2023.1.3\bin; c:\python37\python.exe setup.py egg_info --egg-base ..\..\build\sub1 build --build-base C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\sub1\build install --record C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\sub1\install.log --install-scripts $base/lib/sub1 --single-version-externally-managed
+[4.688s] running egg_info
+[4.688s] creating ..\..\build\sub1\sub1.egg-info
+[4.688s] writing ..\..\build\sub1\sub1.egg-info\PKG-INFO
+[4.688s] writing dependency_links to ..\..\build\sub1\sub1.egg-info\dependency_links.txt
+[4.688s] writing entry points to ..\..\build\sub1\sub1.egg-info\entry_points.txt
+[4.688s] writing requirements to ..\..\build\sub1\sub1.egg-info\requires.txt
+[4.688s] writing top-level names to ..\..\build\sub1\sub1.egg-info\top_level.txt
+[4.703s] writing manifest file '..\..\build\sub1\sub1.egg-info\SOURCES.txt'
+[4.719s] reading manifest file '..\..\build\sub1\sub1.egg-info\SOURCES.txt'
+[4.734s] writing manifest file '..\..\build\sub1\sub1.egg-info\SOURCES.txt'
+[4.734s] running build
+[4.734s] running build_py
+[4.734s] creating C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\sub1\build
+[4.734s] creating C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\sub1\build\lib
+[4.734s] creating C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\sub1\build\lib\sub1
+[4.734s] copying sub1\controller.py -> C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\sub1\build\lib\sub1
+[4.734s] copying sub1\handcontrol.py -> C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\sub1\build\lib\sub1
+[4.734s] copying sub1\make_path.py -> C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\sub1\build\lib\sub1
+[4.734s] copying sub1\odom.py -> C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\sub1\build\lib\sub1
+[4.734s] copying sub1\path_pub.py -> C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\sub1\build\lib\sub1
+[4.734s] copying sub1\path_tracking.py -> C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\sub1\build\lib\sub1
+[4.750s] copying sub1\perception.py -> C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\sub1\build\lib\sub1
+[4.750s] copying sub1\publisher.py -> C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\sub1\build\lib\sub1
+[4.750s] copying sub1\subscriber.py -> C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\sub1\build\lib\sub1
+[4.750s] copying sub1\__init__.py -> C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\sub1\build\lib\sub1
+[4.750s] running install
+[4.750s] running install_lib
+[4.750s] creating C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\Lib\site-packages\sub1
+[4.750s] copying C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\sub1\build\lib\sub1\controller.py -> C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\Lib\site-packages\sub1
+[4.750s] copying C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\sub1\build\lib\sub1\handcontrol.py -> C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\Lib\site-packages\sub1
+[4.750s] copying C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\sub1\build\lib\sub1\make_path.py -> C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\Lib\site-packages\sub1
+[4.766s] copying C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\sub1\build\lib\sub1\odom.py -> C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\Lib\site-packages\sub1
+[4.766s] copying C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\sub1\build\lib\sub1\path_pub.py -> C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\Lib\site-packages\sub1
+[4.766s] copying C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\sub1\build\lib\sub1\path_tracking.py -> C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\Lib\site-packages\sub1
+[4.766s] copying C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\sub1\build\lib\sub1\perception.py -> C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\Lib\site-packages\sub1
+[4.766s] copying C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\sub1\build\lib\sub1\publisher.py -> C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\Lib\site-packages\sub1
+[4.766s] copying C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\sub1\build\lib\sub1\subscriber.py -> C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\Lib\site-packages\sub1
+[4.781s] copying C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\sub1\build\lib\sub1\__init__.py -> C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\Lib\site-packages\sub1
+[4.781s] byte-compiling C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\Lib\site-packages\sub1\controller.py to controller.cpython-37.pyc
+[4.781s] byte-compiling C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\Lib\site-packages\sub1\handcontrol.py to handcontrol.cpython-37.pyc
+[4.781s] byte-compiling C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\Lib\site-packages\sub1\make_path.py to make_path.cpython-37.pyc
+[4.781s] byte-compiling C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\Lib\site-packages\sub1\odom.py to odom.cpython-37.pyc
+[4.797s] byte-compiling C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\Lib\site-packages\sub1\path_pub.py to path_pub.cpython-37.pyc
+[4.797s] byte-compiling C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\Lib\site-packages\sub1\path_tracking.py to path_tracking.cpython-37.pyc
+[4.797s] byte-compiling C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\Lib\site-packages\sub1\perception.py to perception.cpython-37.pyc
+[4.797s] byte-compiling C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\Lib\site-packages\sub1\publisher.py to publisher.cpython-37.pyc
+[4.797s] byte-compiling C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\Lib\site-packages\sub1\subscriber.py to subscriber.cpython-37.pyc
+[4.797s] byte-compiling C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\Lib\site-packages\sub1\__init__.py to __init__.cpython-37.pyc
+[4.813s] running install_data
+[4.813s] creating C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\share\ament_index
+[4.813s] creating C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\share\ament_index\resource_index
+[4.813s] creating C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\share\ament_index\resource_index\packages
+[4.813s] copying resource\sub1 -> C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\share\ament_index\resource_index\packages
+[4.813s] copying package.xml -> C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\share\sub1
+[4.813s] running install_egg_info
+[4.813s] Copying ..\..\build\sub1\sub1.egg-info to C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\Lib\site-packages\sub1-0.0.0-py3.7.egg-info
+[4.828s] running install_scripts
+[4.859s] Installing controller-script.py script to C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\lib\sub1
+[4.859s] Installing controller.exe script to C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\lib\sub1
+[4.859s] Installing handcontrol-script.py script to C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\lib\sub1
+[4.859s] Installing handcontrol.exe script to C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\lib\sub1
+[4.875s] Installing make_path-script.py script to C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\lib\sub1
+[4.875s] Installing make_path.exe script to C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\lib\sub1
+[4.875s] Installing odom-script.py script to C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\lib\sub1
+[4.875s] Installing odom.exe script to C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\lib\sub1
+[4.953s] Installing path_pub-script.py script to C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\lib\sub1
+[4.953s] Installing path_pub.exe script to C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\lib\sub1
+[4.953s] Installing path_tracking-script.py script to C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\lib\sub1
+[4.953s] Installing path_tracking.exe script to C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\lib\sub1
+[4.953s] Installing perception-script.py script to C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\lib\sub1
+[4.953s] Installing perception.exe script to C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\lib\sub1
+[4.953s] Installing publisher-script.py script to C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\lib\sub1
+[4.953s] Installing publisher.exe script to C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\lib\sub1
+[4.953s] Installing subscriber-script.py script to C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\lib\sub1
+[4.953s] Installing subscriber.exe script to C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\lib\sub1
+[4.953s] writing list of installed files to 'C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\sub1\install.log'
+[4.953s] Invoked command in 'C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\src\sub1' returned '0': PYTHONPATH=C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\sub1\prefix_override;C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\sub1\Lib\site-packages;%PYTHONPATH% installDir=%installDir%
+IntelliJ IDEA=C:\Program Files\JetBrains\IntelliJ IDEA 2023.1.3\bin; c:\python37\python.exe setup.py egg_info --egg-base ..\..\build\sub1 build --build-base C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\sub1\build install --record C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\build\sub1\install.log --install-scripts $base/lib/sub1 --single-version-externally-managed
