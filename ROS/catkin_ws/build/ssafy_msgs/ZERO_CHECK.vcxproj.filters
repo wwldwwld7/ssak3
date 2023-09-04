@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\SSAFY\Desktop\tt\catkin_ws\catkin_ws\build\ssafy_msgs\CMakeFiles\81ed440e49f670629145bb950c5fc45b\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A26AF723-4381-3471-AEE0-1035C1D2E935}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
