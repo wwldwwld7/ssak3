@@ -21,7 +21,12 @@ setup(
     entry_points={
         'console_scripts': [
             'my_node = ssak3.my_node:main',
-            'load_map = ssak3.load_map:main',          
+            'load_map = ssak3.load_map:main',
+            'odom = ssak3.odom:main',     
+            'a_star = ssak3.a_star:main',
+            'a_star_local_path = ssak3.a_star_local_path:main',
+            'path_pub = ssak3.path_pub:main',
+            'path_tracking = ssak3.path_tracking:main',
         ],
     },
 )
