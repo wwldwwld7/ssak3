@@ -85,7 +85,7 @@ class pathPub(Node):
         if self.is_odom ==True:
 
             local_path_msg=Path()
-            local_path_msg.header.frame_id='/map'
+            local_path_msg.header.frame_id='map'
             
             x=self.odom_msg.pose.pose.position.x
             y=self.odom_msg.pose.pose.position.y
