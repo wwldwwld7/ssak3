@@ -23,6 +23,7 @@ setup(
             'talker = slam.publisher_member_function:main',
             'listener = slam.subscriber_member_function:main',
             'broadcaster = slam.static_turtle_tf2_broadcaster:main',
+            'slam = slam.slam:main',
         ],
     },
 )
