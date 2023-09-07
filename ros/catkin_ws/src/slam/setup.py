@@ -7,7 +7,7 @@ setup(
     version='0.0.0',
     packages=[package_name],
     data_files=[
-        ('share/ament_index/resource_index/packages',
+        ('share/ament_index/rros2 esource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
     ],
@@ -24,6 +24,8 @@ setup(
             'listener = slam.subscriber_member_function:main',
             'broadcaster = slam.static_turtle_tf2_broadcaster:main',
             'slam = slam.slam:main',
+            'odom_test = slam.odom_test:main',
+            'wall_tracking = slam.wall_tracking:main'
         ],
     },
 )

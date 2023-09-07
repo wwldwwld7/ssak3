@@ -1,0 +1,29 @@
+// generated from rosidl_generator_dds_idl/resource/idl.idl.em
+// with input from ssafy_msgs:msg\MapScan.idl
+// generated code does not contain a copyright notice
+
+#ifndef __ssafy_msgs__msg__map_scan__idl__
+#define __ssafy_msgs__msg__map_scan__idl__
+
+
+module ssafy_msgs {
+
+module msg {
+
+module dds_ {
+
+
+struct MapScan_ {
+long run_;
+
+};
+
+
+};  // module dds_
+
+};  // module msg
+
+};  // module ssafy_msgs
+
+
+#endif  // __ssafy_msgs__msg__map_scan__idl__
