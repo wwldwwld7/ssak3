@@ -153,7 +153,7 @@ class Mapping:
 
         laser_global = np.matmul(pose_mat, laser_mat)
 
-        pose_x = (pose[0] - self.map_center[0] + (self.map_size[0]*self.map_resolution)/2) / self.map_resolution
+        pose_x = (pose[0] - self.map_center[0] + (self.map_size[0]*self.map_resolution)/2) / self.map_resolution - 3.0
         pose_y = (pose[1] - self.map_center[1] + (self.map_size[1]*self.map_resolution)/2) / self.map_resolution
         laser_global_x = (laser_global[0, :] - self.map_center[0] + (self.map_size[0]*self.map_resolution)/2) / self.map_resolution
         laser_global_y =  (laser_global[1, :] - self.map_center[1] + (self.map_size[1]*self.map_resolution)/2) / self.map_resolution
@@ -331,7 +331,6 @@ def save_map(node):
     f=open(full_path,'w')
     data=''
     for pixel in node.map_msg.data :
-
         data+='{0} '.format(pixel)
     f.write(data) 
     f.close()
