@@ -116,7 +116,7 @@ class odom(Node):
                 self.period=(self.current_time-self.prev_time).nanoseconds/1000000000
                 # 로봇의 선속도, 각속도를 저장하는 변수, 시뮬레이터에서 주는 각 속도는 방향이 반대이므로 (-)를 붙여줍니다.
                 linear_x=msg.twist.linear.x
-                angular_z=-msg.twist.angular.z
+                angular_z=msg.twist.angular.z
 
                 # 로직 4. 로봇 위치 추정
                 # (테스트) linear_x = 1, self.theta = 1.5707(rad), self.period = 1 일 때
@@ -140,7 +140,7 @@ class odom(Node):
                 # 헤딩을 오일러각에서 쿼터니언으로 변환
                 # from_eluer(roll, pitch, yaw)
                 # default is radians
-                q = Quaternion.from_euler(0,0,self.theta)
+                q = Quaternion.from_euler(0,0,  self.theta)
                 
                 # map을 기준으로 했을 때 base link의 좌표 x,y를 업데이트
                 self.base_link_transform.transform.translation.x = self.x

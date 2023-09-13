@@ -129,32 +129,34 @@ class Mapping:
     """
     def __init__(self, params_map):
         self.odom_msg = Odometry()
-
         self.map_resolution = params_map["MAP_RESOLUTION"]
         self.map_size = np.array(params_map["MAP_SIZE"]) / self.map_resolution
         self.map_center = params_map["MAP_CENTER"]
         self.map = np.ones((self.map_size[0].astype(int), self.map_size[1].astype(int)))*0.5
         self.occu_up = params_map["OCCUPANCY_UP"]
         self.occu_down = params_map["OCCUPANCY_DOWN"]
-
         self.map_filename = params_map["MAP_FILENAME"]
         self.map_vis_resize_scale = params_map["MAPVIS_RESIZE_SCALE"]
 
         self.T_r_l = np.array([[0,-1,0],[1,0,0],[0,0,1]])
 
 
-    def update(self, pose, laser):
+    def update(self, pose, laser): # pose에 현재 x, y, theta값이 들어있음
         n_points = laser.shape[1]
-        pose_mat = utils.xyh2mat2D(pose)
-        
+        pose_mat = utils.xyh2mat2D(pose) # util.py의 xyh2mat2D가 좌표변환 알고리즘
+        # numpy method
+        # matmul : 행렬 끼리의 곱연산
+        # ones : tuple형으로 (행, 열) 입력해주면 행 * 열 사이즈의 1로 채워진 행렬 만들어줌
         pose_mat = np.matmul(pose_mat,self.T_r_l)
         laser_mat = np.ones((3, n_points))
         laser_mat[:2, :] = laser
-
         laser_global = np.matmul(pose_mat, laser_mat)
-
-        pose_x = (pose[0] - self.map_center[0] + (self.map_size[0]*self.map_resolution)/2) / self.map_resolution - 3.0
+        # 지도를 범위내에 그리기 위해 x는 -3.0 y는 0에서 시작
+        # 로봇의 위치로 시작을 하기 때문에 pose_x,pose_y의 경우 좌표를 변환할 필요가 없다.
+        pose_x = (pose[0] - self.map_center[0] + (self.map_size[0]*self.map_resolution)/2) / self.map_resolution
         pose_y = (pose[1] - self.map_center[1] + (self.map_size[1]*self.map_resolution)/2) / self.map_resolution
+
+        # 벽의 위치를 로봇 위치의 기준이 아닌 Map의 위치를 기준으로 좌표 변환을 진행해준다
         laser_global_x = (laser_global[0, :] - self.map_center[0] + (self.map_size[0]*self.map_resolution)/2) / self.map_resolution
         laser_global_y =  (laser_global[1, :] - self.map_center[1] + (self.map_size[1]*self.map_resolution)/2) / self.map_resolution
 
@@ -162,7 +164,8 @@ class Mapping:
         for i in range(laser_global.shape[1]):
             p1 = np.array([pose_x, pose_y]).reshape(-1).astype(int)
             p2 = np.array([laser_global_x[i], laser_global_y[i]]).astype(int)
-        
+            # print(p1)
+            # print(p2)
             line_iter = createLineIterator(p1, p2, self.map)
         
             if (line_iter.shape[0] == 0):
@@ -181,7 +184,7 @@ class Mapping:
 
     def __del__(self):
         self.save_map(())
-        
+
     def save_map(self):
         map_clone = self.map.copy()
         cv2.imwrite(self.map_filename, map_clone*255)
@@ -269,7 +272,7 @@ class Mapper(Node):
         # print(f"robot_yaw : {robot_yaw}")
     
 
-    def odom_callback(self, msg):
+    def odom_callback(self, msg): # 현재 좌표 x, y 와 회전각도 heading 갱신
         global robot_yaw   
 
         if self.is_imu:
@@ -280,20 +283,21 @@ class Mapper(Node):
             # self.odom_heading = msg.pose.pose.orientation.w
 
             self.is_odom = True
+            
 
 
     def scan_callback(self, msg):
-        print("들어온다!!!000")
+        # print("들어온다!!!000")
         # print(msg)
         # pose_x=msg.range_min
         # pose_y=msg.scan_time
         # heading=msg.time_increment
 
         if self.is_odom:
-
-            pose_x = self.odom_pose_x
-            pose_y = self.odom_pose_y
-            heading = self.odom_heading
+            # 현재 로봇의 x, y, theta 값
+            pose_x = msg.range_min # ssafy_bridge/udp_to_laser pose_x 호출
+            pose_y = msg.scan_time # ssafy_bridge/udp_to_laser pose_y 호출
+            heading = msg.time_increment # ssafy_bridge/udp_to_laser heading 호출
             print("pose   ", pose_x, pose_y, heading)
 
             Distance = np.array(msg.ranges)
@@ -305,9 +309,7 @@ class Mapper(Node):
 
             pose = np.array([[pose_x],[pose_y],[heading]])
 
-            # 소켓에서 들어온 map_create 변수가 1일 경우에만 lidar 이용해 mapping시작 
-
-            print("123123")            
+            # 소켓에서 들어온 map_create 변수가 1일 경우에만 lidar 이용해 mapping시작         
             self.mapping.update(pose, laser)
 
             np_map_data=self.mapping.map.reshape(1,self.map_size) 
@@ -349,6 +351,7 @@ def main(args=None):
         rclpy.shutdown()
 
     except :
+        print("save map")
         save_map(run_mapping)
  
 
