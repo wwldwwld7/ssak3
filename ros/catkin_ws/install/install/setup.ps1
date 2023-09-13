@@ -23,8 +23,8 @@ function _colcon_prefix_chain_powershell_source_script {
 
 # source chained prefixes
 _colcon_prefix_chain_powershell_source_script "C:\dev\ros2-eloquent\local_setup.ps1"
+_colcon_prefix_chain_powershell_source_script "C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "C:\dev\ros2-eloquent\\local_setup.ps1"
-_colcon_prefix_chain_powershell_source_script "C:\Users\SSAFY\Desktop\project\S09P22B201\ros\install\\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "C:\Users\SSAFY\Desktop\project\S09P22B201\ros\catkin_ws\install\\local_setup.ps1"
 
 # source this prefix
