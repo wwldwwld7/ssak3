@@ -328,8 +328,10 @@ class Mapper(Node):
             self.map_pub.publish(self.map_msg)
 
 def save_map(node):
-    full_path="C:\\Users\\SSAFY\\Desktop\\project\\S09P22B201\\ros\\catkin_ws\\src\\slam\\map\\map.txt"
-    print('full_path', full_path)
+    pkg_path = os.getcwd()
+    folder_name = 'map'
+    file_name = 'map.txt'
+    full_path = os.path.join(pkg_path, folder_name, file_name)
     f=open(full_path,'w')
     data=''
     for pixel in node.map_msg.data :
